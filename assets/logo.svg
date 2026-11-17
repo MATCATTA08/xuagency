@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1b2b"/>
+      <stop offset="1" stop-color="#08080d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#25f4ee"/>
+      <stop offset="1" stop-color="#fe2c55"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fe2c55" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#25f4ee" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#25f4ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <clipPath id="card"><rect width="512" height="512" rx="104"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="512" height="512" fill="url(#bg)"/>
+    <circle cx="256" cy="215" r="200" fill="url(#glow)"/>
+
+    <g fill="none" stroke="url(#accent)" stroke-width="3">
+      <circle cx="256" cy="215" r="82"  opacity="0.75"/>
+      <circle cx="256" cy="215" r="112" opacity="0.50"/>
+      <circle cx="256" cy="215" r="142" opacity="0.30"/>
+      <circle cx="256" cy="215" r="172" opacity="0.15"/>
+    </g>
+
+    <rect x="204" y="128" width="104" height="184" rx="26" fill="url(#accent)" opacity="0.55" filter="url(#blur)"/>
+
+    <rect x="204" y="128" width="104" height="184" rx="26" fill="#12121c" stroke="url(#accent)" stroke-width="6"/>
+    <rect x="240" y="142" width="32" height="8" rx="4" fill="#ffffff" opacity="0.35"/>
+
+    <g stroke="url(#accent)" stroke-width="14" stroke-linecap="round" fill="none">
+      <line x1="230" y1="176" x2="282" y2="270"/>
+      <line x1="282" y1="176" x2="230" y2="270"/>
+    </g>
+
+    <text x="256" y="408" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="2">
+      <tspan fill="#ffffff">Xu</tspan><tspan fill="url(#accent)">Agency</tspan>
+    </text>
+    <text x="256" y="446" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" letter-spacing="4" fill="#ffffff" opacity="0.6">SMARTPHONE ACCESSORIES</text>
+  </g>
+</svg>
